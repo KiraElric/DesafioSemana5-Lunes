@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  author: MyString
+  state: 1
+  loan_date: 2021-03-08
+  return_date: 2021-03-08
+  lend_to: MyString
+  category: 1
+
+two:
+  title: MyString
+  author: MyString
+  state: 1
+  loan_date: 2021-03-08
+  return_date: 2021-03-08
+  lend_to: MyString
+  category: 1
