@@ -3,7 +3,12 @@ class BooksController < ApplicationController
   before_action :set_states, :set_categorys, only: [ :edit, :update, :new, :create ]
   # GET /books or /books.json
   def index
-    @books = Book.all
+    #Forma de listar los libros sin ransack
+    #@books = Book.all
+
+    #Forma de listar y filtrar los libros con ransack
+    @q = Book.ransack(params[:q])
+    @books = @q.result(distinct: true)
   end
 
   # GET /books/1 or /books/1.json
